@@ -1,0 +1,68 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+  background-color: #c4c4c4;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #005677;
+  text-align: center;
+}
+
+header {
+  background-color: #e5e5e5;
+}
+
+header div {
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+main {
+  margin-left: 20%;
+  margin-right: 20%;
+  height: calc(100vh - 224px - 19px - 40px);
+}
+
+span {
+  font-weight: bold;
+}
+
+.datos-personales span {
+  font-style: italic;
+}
+
+.categorias {
+  background-color: #c4c4c4;
+  font-size: 18px;
+  color: #005677;
+}
+
+.formacion-anios,
+.experiencia-laboral {
+  list-style: none;
+}
+
+footer {
+  background-color: #005677;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+}
+.fab {
+  display: inline;
+  margin: 0 10px 0 10px;
+  font-weight: normal;
+}
+
+.e-mail {
+  font-weight: normal;
+}
