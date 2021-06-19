@@ -1,0 +1,81 @@
+/*******************Fuente************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/*******************Estilos universales************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+/*******************Estilos del aside************/
+
+aside {
+  background-color: #222222;
+  color: #f3f3f3;
+}
+/*******************Estilos del nav************/
+
+nav {
+  background-color: #f0a83e;
+}
+
+.fa-paw {
+  color: white;
+}
+
+nav li {
+  color: #f3f3f3;
+  display: inline;
+}
+
+nav div {
+  display: inline;
+  margin-right: 10px;
+}
+/*******************Imagen de fondo y títulos************/
+
+.presentacion {
+  background-image: url("../img/imagen_fondo_comedero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 69px - 58px);
+  text-align: center;
+}
+
+.presentacion p {
+  color: #3c2313;
+}
+
+h2 {
+  background-color: #f3f3f3;
+}
+
+.btn__comederos {
+  background-color: #f0a83e;
+  border: none;
+  border-radius: 8px;
+  color: #f3f3f3;
+  height: 50px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  width: 140px;
+}
+
+/*******************Estilos de suscripción************/
+.suscripcion {
+  background-color: #f0a83e;
+}
+
+/*******************Estilos del footer************/
+footer {
+  color: #f3f3f3;
+}
+
+.redes_sociales {
+  background-color: #3c2313;
+}
+footer .copyright {
+  background-color: #222222;
+  text-align: center;
+}
