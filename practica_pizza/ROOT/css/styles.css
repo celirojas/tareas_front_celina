@@ -1,0 +1,115 @@
+/**********************Fuente***************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/**********************Estilos generales***************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/**********************Estilos del body***************/
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+/**********************Estilos del header***************/
+header {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffff;
+  height: 100px;
+  padding: 0 25px;
+}
+.header__logo,
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.img__logo {
+  width: 150px;
+}
+.img__pizza {
+  width: 90px;
+}
+.header__nav {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+}
+/**********************Estilos del main***************/
+main {
+  display: flex;
+  gap: 15px;
+  height: calc(100vh - 100px - 137px);
+  background-color: #e5e5e5;
+  justify-content: center;
+  padding: 30px 0;
+}
+/**********************Estilos section***************/
+.section__compra {
+  background-image: url(../img/delivery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.section__podio {
+  width: 40%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 90px;
+}
+.top__pizzas {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+h1 {
+  color: #fc200c;
+  padding: 25px 25px;
+}
+span {
+  color: #ffff;
+}
+h2 {
+  font-size: 24;
+  padding-top: 25px;
+  color: #fc200c;
+}
+h3 {
+  font-size: 20;
+  padding-bottom: 25px;
+}
+.top__pizzas li {
+  padding: 5px 0;
+  font-weight: bold;
+}
+.img__ingredientes {
+  width: 100px;
+}
+
+/**********************Estilos footer***************/
+footer {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 15px 30px;
+}
+
+ul.nav__footer {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+}
