@@ -32,7 +32,7 @@ header {
 }
 /********************Main********************************/
 main {
-  height: 900px;
+  /* height: 900px; */
   margin: auto;
   width: 90%;
   z-index: -1;
@@ -40,6 +40,8 @@ main {
 /********************Section********************************/
 section {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 /********************Estilos de las cards**********************/
 .card {
@@ -140,4 +142,25 @@ footer {
   text-align: center;
   font-weight: 300;
   height: 25px;
+}
+
+/********************Media Queries**********************/
+@media (max-width: 768px) {
+  section {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
 }

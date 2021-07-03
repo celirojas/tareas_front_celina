@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/08f34a14a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="../ROOT/css/styles.css">
     <title>Pet Shop</title>
 </head>
@@ -13,12 +15,12 @@
 <body>
     <aside>
         <p>Grandes ofertas en comederos</p>
-        <p>Español</p>
-        <p>$ARG</p>
+        <div><span>Español</span><span>$ARG</span></div>
+
     </aside>
     <header>
         <nav>
-            <img src="./img/Logo2.png" alt="logo">
+            <img src="./img/Logo2.png" alt="logo" class="logo">
             <ul type="none">
                 <div>
                     <i class="fas fa-paw"></i>
@@ -41,36 +43,42 @@
     </header>
     <main>
         <div class="presentacion">
-            <h2>¡Es un placer tenerte aquí!</h2>
-            <p>¡Comederos en descuento!</p>
-            <button class="btn__comederos">Comederos</button>
+            <div class="presentacion_titulos">
+                <h2>¡Es un placer tenerte aquí!</h2>
+                <p>¡Comederos en descuento!</p>
+                <button class="btn__comederos">Comederos</button>
+            </div>
         </div>
         <section class="productos">
-            <img src="./img/pawprint 1.png" alt="Logo patita">
-            <h1>Productos destacados</h1>
-            <ul type="none">
-                <li>Comederos</li>
-                <li>Accesorios</li>
-                <li>Comida</li>
-            </ul>
-            <div>
-                <img src="./img/churrasquito.png" alt="Juguete churrasquito">
-                <p>Juguete Churrasquito</p>
-                <p>$150</p>
+            <div class="productos_descripcion">
+                <img src="./img/pawprint 1.png" alt="Logo patita" class="patita_naranja">
+                <h1>Productos Destacados</h1>
+                <ul type="none" class="categorias">
+                    <li>Comederos</li>
+                    <li>Accesorios</li>
+                    <li>Comida</li>
+                </ul>
             </div>
-            <div>
-                <img src="./img/comedero.png" alt="Comedero para perro">
-                <p>Comedero para perro</p>
-                <p>$250</p>
-            </div>
-            <div>
-                <img src="./img/Huesito.png" alt="Juguete Huesito">
-                <p>Juguete Huesito</p>
-                <p>$650</p>
+            <div class="productos__items">
+                <div>
+                    <img src="./img/churrasquito.png" alt="Juguete churrasquito">
+                    <p class="productos__nombre">Juguete Churrasquito</p>
+                    <p class="productos__precio">$150</p>
+                </div>
+                <div>
+                    <img src="./img/comedero.png" alt="Comedero para perro">
+                    <p class="productos__nombre">Comedero para perro</p>
+                    <p class="productos__precio">$250</p>
+                </div>
+                <div>
+                    <img src="./img/Huesito.png" alt="Juguete Huesito">
+                    <p class="productos__nombre">Juguete Huesito</p>
+                    <p class="productos__precio">$650</p>
+                </div>
             </div>
         </section>
 
-        <section class="contacto">
+        <!-- <section class="contacto">
             <h3>Contáctanos</h3>
 
             <form action="">
@@ -83,29 +91,46 @@
                 <button>Resetear</button>
                 <button>Enviar</button>
             </form>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div class="suscripcion">
-            <i class="far fa-envelope-open fa-3x"></i>
-            <p>Suscríbete para más novedades</p>
+            <div class="suscripcion__titulo">
+                <i class="far fa-envelope-open fa-2x"></i>
+                <p>Suscríbete para más novedades</p>
+            </div>
             <form action="">
-                <label for="emailFooter">Ingresá tu correo electrónico</label>
-                <input type="text" id="emailFooter" name="emailFooter">
-                <button>Suscribirme</button>
+                <input type="text" id="emailFooter" name="emailFooter" placeholder="Ingresá tu correo electrónico">
+                <button class="suscribirme">Suscribirme</button>
             </form>
         </div>
         <section class="redes_sociales">
-            <i class="fas fa-map-marker-alt fa-3x"></i>
-            <h4>Localidad</h4>
-            <p>Calle - Provincia</p>
-            <i class="fas fa-phone-square-alt fa-3x"></i>
-            <h4>Teléfono</h4>
-            <p>Número de teléfono</p>
-            <i class="far fa-envelope fa-3x"></i>
-            <h4>Correo electrónico</h4>
-            <p>Dirección de correo</p>
-            <img src="./img/logo_footer.png" alt="Logo">
+            <div class="redes__items">
+                <div class="redes__conjunto">
+                    <i class="fas fa-map-marker-alt fa-3x"></i>
+                    <div class="ubicacion">
+                        <h4>Localidad</h4>
+                        <p>Calle - Provincia</p>
+                    </div>
+                </div>
+                <div class="redes__conjunto">
+                    <i class="fas fa-phone-square-alt fa-3x"></i>
+                    <div class="ubicacion">
+                        <h4>Teléfono</h4>
+                        <p>Número de teléfono</p>
+                    </div>
+                </div>
+                <div class="redes__conjunto">
+                    <i class="far fa-envelope fa-3x"></i>
+                    <div class="ubicacion">
+                        <h4>Correo electrónico</h4>
+                        <p>Dirección de correo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__logo">
+                <img src="./img/logo_footer.png" alt="Logo">
+            </div>
         </section>
         <p class="copyright">Todos los derechos reservados Front End.</p>
     </footer>
