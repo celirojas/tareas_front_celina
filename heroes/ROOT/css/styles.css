@@ -12,7 +12,7 @@ html {
 
 /*****************Header****************/
 aside {
-  background-color: #d1891c;
+  background-color: #1cd1b0;
   padding: 0.5rem 1rem;
 }
 h1 {
@@ -20,6 +20,11 @@ h1 {
   color: #ffff;
   padding: 1rem;
   font-weight: 300;
+}
+.header__presentacion {
+  display: flex;
+  background-color: #00669f;
+  padding: 0.5rem;
 }
 
 /*****************Body****************/
