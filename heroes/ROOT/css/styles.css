@@ -1,0 +1,171 @@
+/*****************Fuentes****************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+
+/*****************Header****************/
+aside {
+  background-color: #d1891c;
+  padding: 0.5rem 1rem;
+}
+h1 {
+  background-color: #00669f;
+  color: #ffff;
+  padding: 1rem;
+  font-weight: 300;
+}
+
+/*****************Body****************/
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+/*****************Section****************/
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 2rem;
+  padding: 0 10px;
+  margin: 2rem auto;
+}
+/*****************Cards****************/
+.card {
+  background-color: #f3f3f3;
+  width: 45%;
+  max-width: 350px;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 4px 4px 4px rgb(0 0 0 / 25%);
+  position: relative;
+}
+.card__corazon {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  width: 10%;
+}
+.card__profile {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  transform: translate(-50%);
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+.card__profile.mujer {
+  background-image: url(../imgs/profile_mujer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card__profile.batman {
+  background-image: url(../imgs/profile_batman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card__profile.superman {
+  background-image: url(../imgs/profile_superman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card__profile.harley {
+  background-image: url(../imgs/profile_harley.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card__background.batman {
+  background-image: url(../imgs/fondo_batman.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+.card__background.mujer {
+  background-image: url(../imgs/fondo_mujer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+.card__background.harley {
+  background-image: url(../imgs/fondo_harley.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+.card__background.superman {
+  background-image: url(../imgs/fondo_superman.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+
+.card__background {
+  border-radius: 20px 20px 0 0;
+  position: relative;
+}
+
+.card h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.card__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
+}
+a {
+  background-color: #00669f;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 300;
+}
+.plus {
+  background-color: #00669f;
+  border-radius: 50%;
+  position: fixed;
+  right: 300px;
+  bottom: 100px;
+  padding: 1rem 1.2rem;
+  color: white;
+  font-size: 2rem;
+}
+
+/*****************Footer****************/
+footer {
+  background-color: #00669f;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+}
+footer img {
+  width: 10%;
+}
+
+/*****************Media Query****************/
+@media (max-width: 700px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+}
