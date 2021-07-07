@@ -23,8 +23,23 @@ h1 {
 }
 .header__presentacion {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #00669f;
   padding: 0.5rem;
+}
+.header__presentacion div {
+  display: flex;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
+}
+header a {
+  text-decoration: none;
+  color: #ffff;
 }
 
 /*****************Body****************/
@@ -227,6 +242,8 @@ form span {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+/*****************Contacto*******************/
+
 /*****************Media Query****************/
 @media (max-width: 700px) {
   section {

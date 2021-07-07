@@ -34,12 +34,17 @@
 
     </header>
     <section class="section__form">
-        <h2 class="login__title">Login</h2>
+        <h2 class="login__title">Contacto</h2>
         <form action="">
-            <input type="mail" name="email" id="email" placeholder="Usuario">
-            <input type="password" name="password" id="password" placeholder="Contraseña">
-            <button class="form__btn">Entrar</button>
-            <p><span>¿No tienes una cuenta?</span> Registrarme</p>
+            <input type="text" name="nomAp" id="nomAp" placeholder="Nombre y Apellido">
+            <input type="email" name="email" id="email" placeholder="Correo electrónico">
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+
+            <div class="form__buttons">
+                <input type="reset" value="Resetear" class="reset__btn">
+                <input type="submit" value="Entrar" class="submit__btn">
+            </div>
+
 
         </form>
 
