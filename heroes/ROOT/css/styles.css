@@ -242,7 +242,72 @@ form span {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-/*****************Contacto*******************/
+/*****************AgregaSuper*******************/
+.formulario_agregar {
+  background-color: #00669f;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  color: white;
+}
+.form__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.flex-container {
+  display: flex;
+  gap: 2rem;
+}
+.flex-container .col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 1rem;
+}
+
+.flex-container input[type="text"],
+input[type="date"],
+textarea,
+select {
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #1cd1b0;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex-container textarea {
+  padding: 1rem;
+}
+
+.submit {
+  padding: 1rem 1.5rem;
+  width: 50%;
+  align-self: center;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #1cd1b0;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+fieldset {
+  border: none;
+  padding: 0.7rem 0;
+}
+fieldset div {
+  padding: 0.1rem 0;
+}
 
 /*****************Media Query****************/
 @media (max-width: 700px) {

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Heroes</title>
+</head>
+
+<body>
+    <header>
+        <aside>
+            <span>20% de descuento en todos los productos</span>
+        </aside>
+        <div class="header__presentacion">
+            <div>
+                <a href="index.html"><img src="./imgs/logo_tienda.png" alt="logo tienda" class="header__img"></a>
+                <h1 class="header__titulo">
+                    Card Super Heroes
+                </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="agregarSuper.html">Añadir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <form action="" class="formulario_agregar">
+            <div class="form__title">
+                <h2>¡Añadí tu super!</h2>
+                <p>Agregá tu personaje favorito completando las opciones</p>
+            </div>
+
+            <div class="flex-container">
+                <div class="col">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="date" id="date">
+                    <textarea name="descr" id="descripcion" cols="30" rows="13">Descripción</textarea>
+                </div>
+
+                <div class="col">
+                    <label for="especie">Especie</label>
+                    <select name="especie" id="especie">
+                        <option value="select" disabled selected hidden>Seleccione una opción</option>
+                        <option value="Alienígena">Alienígena</option>
+                        <option value="Robot">Robot</option>
+                        <option value="insectoide">Insectoide</option>
+                    </select>
+                    <label for="foto">Agregar Foto</label>
+                    <input type="file">
+                    <fieldset>
+                        <legend>Poderes</legend>
+                        <div>
+                            <input type="checkbox" name="poderes" value="volar" id="volar">
+                            <label for="volar">Volar</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="SuperInteligencia" value="SuperInteligencia"
+                                id="SuperInteligencia">
+                            <label for="SuperInteligencia">SuperInteligencia</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="rayos" value="rayos" id="rayos">
+                            <label for="rayos">Vista de rayo láser</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="billetera" value="billetera" id="billetera">
+                            <label for="billetera">Billetera gorda</label>
+                        </div>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend>Tipo de personaje</legend>
+                        <div>
+                            <input type="radio" value="héroe/heroína" id="rol">
+                            <label for="rol">Héroe/Heroína</label>
+                        </div>
+                        <div>
+                            <input type="radio" value="villano/villana" id="antagonista">
+                            <label for="antagonista">Villano/Villana</label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <input type="submit" value="Añadir" class="submit">
+        </form>
+    </section>
+
+    </section>
+    <footer class="footer">
+        <span>Todos los derechos reservados a Front End I</span>
+        <img src="./imgs/github.png" alt="Logo GitHub">
+
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
