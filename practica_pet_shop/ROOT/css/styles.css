@@ -44,6 +44,13 @@ nav div {
   display: inline;
   margin-right: 10px;
 }
+nav li::before {
+  content: "\f1b0";
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-weight: 900;
+  padding-right: 10px;
+}
 /*******************Imagen de fondo y títulos************/
 
 .presentacion {
@@ -131,6 +138,52 @@ h1 {
   font-weight: 600;
   text-align: center;
 }
+/*******************Estilos de contacto************/
+#form__contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  padding: 3rem 0;
+}
+#form__contacto input[type="tel"],
+input[type="email"],
+input[type="text"] {
+  border: none;
+  width: 30%;
+  color: white;
+  background-color: #3c2313;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+}
+.contacto__btn {
+  border: none;
+  color: white;
+}
+#resetear {
+  background-color: #8a8787;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+#enviar {
+  background-color: #f0a83e;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+h3 {
+  color: #3c2313;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 /*******************Estilos de suscripción************/
 .suscripcion {
@@ -156,16 +209,17 @@ h1 {
   padding: 1rem 1.5rem;
   border-radius: 1.5rem;
 }
-form {
+#form__suscripcion {
   display: flex;
   gap: 1rem;
   width: 40%;
 }
-form input {
+#form__suscripcion input {
   border: none;
   border-radius: 1.2rem;
   width: 80%;
   padding: 5px;
+  background-color: white;
 }
 
 /*******************Estilos del footer************/
@@ -244,7 +298,7 @@ footer .copyright {
   .suscripcion__titulo {
     font-size: 1.5rem;
   }
-  form {
+  #form_suscripcion {
     width: 80%;
   }
   .redes_sociales {
@@ -256,5 +310,15 @@ footer .copyright {
   }
   .btn__comederos {
     font-size: 0.5rem;
+  }
+  .contacto__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #form__contacto input[type="tel"],
+  input[type="email"],
+  input[type="text"] {
+    width: 60%;
   }
 }
