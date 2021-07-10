@@ -269,8 +269,8 @@ form span {
 
 .flex-container input[type="text"],
 input[type="date"],
-textarea,
-select {
+.textarea_descripcion,
+.select_especie {
   border-radius: 8px;
   border: none;
   outline: none;
@@ -288,6 +288,9 @@ input[type="file"]::-webkit-file-upload-button {
 .flex-container textarea {
   padding: 1rem;
 }
+.flex-container textarea:focus {
+  border: 2px solid black;
+}
 
 .submit {
   padding: 1rem 1.5rem;
@@ -300,6 +303,13 @@ input[type="file"]::-webkit-file-upload-button {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.5em;
+}
+.submit:hover {
+  background-color: rgba(28, 209, 176, 0.7);
+}
+label.agregar_nombreEspecie::before {
+  content: "*";
+  color: white;
 }
 fieldset {
   border: none;

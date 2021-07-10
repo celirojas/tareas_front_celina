@@ -42,16 +42,17 @@
 
             <div class="flex-container">
                 <div class="col">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre" class="agregar_nombreEspecie">Nombre</label>
                     <input type="text" name="nombre" id="nombre">
                     <label for="fecha">Fecha</label>
                     <input type="date" name="date" id="date">
-                    <textarea name="descr" id="descripcion" cols="30" rows="13">Descripción</textarea>
+                    <textarea name="descr" id="descripcion" cols="30" rows="13"
+                        class="textarea_descripcion">Descripción</textarea>
                 </div>
 
                 <div class="col">
-                    <label for="especie">Especie</label>
-                    <select name="especie" id="especie">
+                    <label for="especie" class="agregar_nombreEspecie">Especie</label>
+                    <select name="especie" id="especie" class="select_especie">
                         <option value="select" disabled selected hidden>Seleccione una opción</option>
                         <option value="Alienígena">Alienígena</option>
                         <option value="Robot">Robot</option>
